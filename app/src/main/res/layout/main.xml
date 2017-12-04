@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:gravity="center_vertical|center_horizontal"
+android:layout_height="match_parent"
+    android:background="@color/contrasting_orange">
+
+    <EditText
+        android:id="@+id/edit_text_url"
+        style="@style/WhiteInputBox"
+        android:layout_marginBottom="@dimen/margin_border"
+        android:layout_marginTop="@dimen/margin_border"
+        android:hint="@string/hint_url"
+        android:textColorHint="@color/black"
+        android:inputType="textUri"/>
+
+    <View style="@style/LightRedLine" />
+
+    <Button
+        android:id="@+id/buttonDownload"
+        style="@style/OrangeButton"
+        android:layout_gravity="center"
+        android:text="@string/do_the_download"/>
+
+
+    <View style="@style/LightRedLine" />
+
+    <TextView
+        android:id="@+id/textViewFun"
+        style="@style/WhiteHeader"
+        android:layout_marginBottom="@dimen/margin_border_layout"
+        android:layout_marginTop="@dimen/margin_border"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/do_something_fun"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonDoSomethingCool"
+        style="@style/OrangeButton"
+        android:layout_gravity="center"
+        android:text="@string/press_while_downloading"/>
+
+
+</LinearLayout>
